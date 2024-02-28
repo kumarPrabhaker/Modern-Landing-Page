@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "gilroy";
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;  
+}
+#back{
+    width: 100%;
+    height: 100vh;
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+#workingarea{
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+}
+#nav{
+    pointer-events: all;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0 ;
+}
+#nav img{
+    height: 40px;
+}
+#nleft , #nright {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#nav a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+#Hero{
+    position:absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0 , -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 55px;
+}
+#heroleft{
+    min-width: 50%;
+}
+#heroleft .elem {
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+    /* border: 2px solid green; */
+}
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+#heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
+    font-family: "kajiro" ;
+    color: #fff;
+    font-weight: 100;
+    font-size: 11vw;
+}
+#heroleft button{
+    pointer-events: all;
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    font-family: "kajiro";
+    margin-top: 2vw;
+}
+#heroright{
+    width: 17%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+}
+#heroright p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+}
+#heroright .imagediv{
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-image: url("https://images.unsplash.com/photo-1633990212781-ab04323f58f1?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    /* background-position: center; */
+    background-position: top;
+}
+#heroright p:nth-child(3){
+    margin-bottom: 30px;
+}
+
+/* ============== */
+
